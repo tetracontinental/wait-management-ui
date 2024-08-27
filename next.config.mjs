@@ -4,8 +4,8 @@ import withPWA from 'next-pwa';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: '/your-repo-name/',
-  basePath: '/your-repo-name',
+  assetPrefix: '/wait-management-ui/',
+  basePath: '/wait-management-ui',
   // 他の設定があればここに追加
 };
 
