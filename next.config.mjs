@@ -1,15 +1,9 @@
-// next.config.mjs
-import withPWA from 'next-pwa';
+import withPWAInit from "@ducanh2912/next-pwa";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  assetPrefix: '/wait-management-ui/',
-  basePath: '/wait-management-ui',
-  // 他の設定があればここに追加
-};
+const withPWA = withPWAInit({
+  dest: "public",
+});
 
-export default withPWA(nextConfig, {
-  dest: 'public',
-  disable: process.env.NODE_ENV === 'development',
+export default withPWA({
+  // Your Next.js config
 });
